@@ -1,27 +1,23 @@
-# TaskManagerFront
+<h1 align="center">
+    Task Manager Front 
+</h1>
+<p align="center">🚀 Uma aplicação web para gerenciar uma Lista de Tarefas</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+### 🛠 Features
 
-## Development server
+As seguintes ferramentas foram usadas na construção do projeto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Git](https://git-scm.com)
+- [Node Js](https://nodejs.org/en)
+- [Angular CLI](https://github.com/angular/angular-cli)
 
-## Code scaffolding
+Para os ícones foi o utilizado o [Font Awesome](https://fontawesome.com)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Getting Started
 
-## Build
+- Clone o repositório em sua máquina: `git clone https://github.com/julianoferrrone12/TaskManagerFront.git` <br />
+- Na pasta em que foi clonado o repositório acesse o diretório correto: "cd TaskManagerFront".
+- É necessário instalar as dependências do projeto, que são especificadas no arquivo package.json. Para isso vamos utilizar o gerenciador de pacotes Node.js, execute o comando no terminal: `npm install`. Este comando vai baixar todas as dependências necessárias para o projeto funcionar corretamente.
+- Depois que as dependências estiverem instaladas, o projeto pode ser executado localmente. O comando padrão para iniciar um projeto Angular é: `ng serve`. Isso irá compilar o projeto e iniciar um servidor de desenvolvimento. O terminal mostrará uma URL, geralmente http://localhost:4200/, que pode ser aberta no navegador para visualizar o aplicativo.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🚩 The End
