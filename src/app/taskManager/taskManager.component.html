@@ -6,8 +6,8 @@
 
     <!-- Search, Filter, and Create Button Section -->
     <div class="d-flex flex-column flex-md-row align-items-center justify-content-between mb-4">
-        <div class="d-flex flex-column flex-md-row flex-grow-1 mb-3 mb-md-0">
-            <div class="search-bar-container me-md-2 mb-2 mb-md-0">
+        <div class="d-flex flex-column flex-md-row flex-grow-1 mb-3 mb-md-0 align-items-center">
+            <div class="search-bar-container me-md-2 mb-2 mb-md-0 flex-grow-1">
                 <input [(ngModel)]="searchName" (ngModelChange)="applyFilters()"
                     placeholder="Pesquise o nome da tarefa aqui..." class="form-control search-input" />
                 <i class="fas fa-search search-icon"></i>
@@ -16,10 +16,12 @@
             <app-dropdown [options]="statusOptions" placeholder="Todos" (optionSelected)="onStatusSelected($event)"
                 class="me-md-2 mb-2 mb-md-0"></app-dropdown>
 
-            <button (click)="applyFilters()" type="button" class="btn custom-filter-button mb-2 mb-md-0">Aplicar
-                Filtros</button>
-            <i *ngIf="searchName || searchStatus" (click)="clearFilters()" class="fas fa-times ms-md-2"
-                style="cursor: pointer;" title="Limpar filtros"></i>
+            <div class="d-flex align-items-center mb-2 mb-md-0">
+                <button (click)="applyFilters()" type="button" class="btn custom-filter-button me-md-2">Aplicar
+                    Filtros</button>
+                <i *ngIf="searchName || searchStatus" (click)="clearFilters()" class="fas fa-times ms-md-2"
+                    style="cursor: pointer;" title="Limpar filtros"></i>
+            </div>
         </div>
 
         <div>
@@ -29,6 +31,7 @@
             </button>
         </div>
     </div>
+
 
     <div *ngIf="tasks.length === 0" class="d-flex justify-content-center">
         <div class="alert-info d-flex align-items-start" role="alert">
