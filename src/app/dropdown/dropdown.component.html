@@ -1,0 +1,13 @@
+<div class="custom-select-container">
+    <div class="custom-select-selected" (click)="toggleDropdown()">
+        <span>{{ selectedLabel || placeholder }}</span>
+        <i class="fas fa-chevron-down select-arrow"></i>
+    </div>
+    <div class="custom-select-options" *ngIf="isOpen">
+        <div *ngFor="let option of options" class="custom-select-option"
+            [ngStyle]="{'background-color': option.value === selectedValue ? '#8618B0' : '#fff', 'color': option.value === selectedValue ? '#fff' : '#000'}"
+            (click)="selectOption(option)">
+            {{ option.label }}
+        </div>
+    </div>
+</div>
