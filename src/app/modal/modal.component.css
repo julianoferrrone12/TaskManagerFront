@@ -1,0 +1,11 @@
+.custom-modal-button {
+    background-color: #FE7643;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.custom-modal-button:hover {
+    background-color: #E6602F;
+    color: white;
+}
