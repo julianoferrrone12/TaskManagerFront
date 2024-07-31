@@ -9,7 +9,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Git](https://git-scm.com)
 - [Node Js](https://nodejs.org/en)
-- [Angular CLI](https://github.com/angular/angular-cli)
+- [Angular CLI 17.2.1](https://v17.angular.io/start)
 
 Para os ícones foi o utilizado o [Font Awesome](https://fontawesome.com)
 
